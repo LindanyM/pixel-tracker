@@ -24,19 +24,23 @@
 
 
 ```
-pixel-tracker/
-├─ src/
-│ ├─ main/
-│ │ ├─ java/
-│ │ │ └─ com/example/pixeltracker/
-│ │ │ ├─ PixelTrackerApplication.java # Main Spring Boot app
-│ │ │ └─ controllers/
-│ │ │ └─ TrackerController.java # REST endpoint
-│ │ └─ resources/
-│ │ ├─ application.properties # Spring configuration
-│ │ └─ static/ # Optional static files
-├─ pom.xml # Maven descriptor
-└─ README.md # Project documentation
+  pixel-tracker/
+  │
+  ├─ src/
+  │  ├─ main/
+  │  │  ├─ java/
+  │  │  │  └─ com/example/pixeltracker/
+  │  │  │      ├─ PixelTrackerApplication.java   # Main Spring Boot app
+  │  │  │      └─ controllers/
+  │  │  │          └─ TrackerController.java    # REST endpoint
+  │  │  │
+  │  │  └─ resources/
+  │  │      ├─ application.properties           # Spring config
+  │  │      └─ static/                          # Optional static resources
+  │  │
+  ├─ pom.xml                                   # Maven descriptor
+  └─ README.md                                 # Documentation
+
 ```
 
 ---
