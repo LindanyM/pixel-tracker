@@ -21,7 +21,8 @@
 ---
 
 ## Project Structure
-``
+
+
 pixel-tracker/
 │
 ├─ src/
@@ -36,7 +37,7 @@ pixel-tracker/
 │  │
 ├─ pom.xml                                   # Maven project descriptor
 └─ README.md                                 # Project documentation
-``
+
 
 
 
