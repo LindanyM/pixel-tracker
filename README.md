@@ -21,21 +21,22 @@
 ---
 
 ## Project Structure
-
+``
 pixel-tracker/
 │
 ├─ src/
-│ ├─ main/
-│ │ ├─ java/
-│ │ │ └─ com/example/pixeltracker/
-│ │ │ ├─ PixelTrackerApplication.java # Main Spring Boot app
-│ │ │ └─ controllers/
-│ │ │ └─ TrackerController.java # Pixel tracker REST endpoint
-│ │ └─ resources/
-│ │ └─ application.properties # Configuration (port, etc.)
-│ │
-├─ pom.xml # Maven project descriptor
-└─ README.md # Project documentation
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  └─ com/example/pixeltracker/
+│  │  │      ├─ PixelTrackerApplication.java   # Main Spring Boot app
+│  │  │      └─ controllers/
+│  │  │          └─ TrackerController.java    # Pixel tracker endpoint
+│  │  └─ resources/
+│  │      └─ application.properties           # App configuration (port, etc.)
+│  │
+├─ pom.xml                                   # Maven project descriptor
+└─ README.md                                 # Project documentation
+``
 
 
 
@@ -103,13 +104,17 @@ server.port=8081
 ```
 
 3️⃣ Access the endpoint
-```http://localhost:8080/api/tracker?name=TestServer```
+```
+http://localhost:8080/api/tracker?name=TestServer
+```
 
 Testing
 
 Use curl, Postman, or any HTTP client:
 
-```curl "http://localhost:8080/api/tracker?name=Server1&cpuC=2&cpuL=15&tRam=4096&uRam=1024&disk=25000" --output tracker.png```
+```
+curl "http://localhost:8080/api/tracker?name=Server1&cpuC=2&cpuL=15&tRam=4096&uRam=1024&disk=25000" --output tracker.png
+```
 
 
 This will download a PNG image called tracker.png.
@@ -152,7 +157,4 @@ Automate builds, Docker image creation, and deployments using GitHub Actions or 
 Author
 
 Lindani R Mabaso – Software Engineer | AI, Data, Cloud
-
-
----
 
