@@ -123,19 +123,19 @@ curl "http://localhost:8080/api/tracker?name=Server1&cpuC=2&cpuL=15&tRam=4096&uR
 This will download a PNG image called tracker.png.
 
 
-Future Development
+## Future Development
 
-1×1 Transparent Pixel Tracker
+1) 1×1 Transparent Pixel Tracker
 
-Replace telemetry image with a 1×1 pixel for web tracking.
+- Replace telemetry image with a 1×1 pixel for web tracking.
 
-Structured Logging
+2) Structured Logging
 
-Save logs in JSON format for easy integration with logging platforms (ELK, GCP Logging, etc.).
+- Save logs in JSON format for easy integration with logging platforms (ELK, GCP Logging, etc.).
 
-Dockerization
+3) Dockerization
 
-Add a Dockerfile to containerize the service:
+- Add a Dockerfile to containerize the service:
 
 ```
 FROM eclipse-temurin:21-jdk
@@ -144,20 +144,20 @@ ENTRYPOINT ["java","-jar","/app.jar"]`
 ```
 
 
-Cloud Deployment
+4) Cloud Deployment
 
-Deploy on GCP Cloud Run, AWS ECS, or Azure Container Apps.
+- Deploy on GCP Cloud Run, AWS ECS, or Azure Container Apps.
 
-Use environment variable for port assignment:
+- Use environment variable for port assignment:
 ```
 server.port=${PORT:8080}
 ```
 
-CI/CD
+5) CI/CD
 
-Automate builds, Docker image creation, and deployments using GitHub Actions or GitLab CI.
+- Automate builds, Docker image creation, and deployments using GitHub Actions or GitLab CI.
 
-Author
+###Author
 
 Lindani R Mabaso – Software Engineer | AI, Data, Cloud
 
